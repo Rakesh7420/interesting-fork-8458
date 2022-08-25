@@ -107,13 +107,12 @@
     font-size: 15px;
     color:  #7c809c;
 }
-.newsDivs>.imgBox{
-    width: 30%;
-    /* border: 1px dotted rebeccapurple; */
-}
+
 .imgBox>img{
     width: 100%;
 }
+
+
     /* <-------------------Left Sidebar styling ------------------------->*/
 
 #sidebar{
