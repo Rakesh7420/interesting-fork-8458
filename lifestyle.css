@@ -117,7 +117,7 @@
 
     /* <-------------------Left Sidebar styling ------------------------->*/
 
-#sidebar{
+#leftSidebar{
     width: 25%;
     /* border: 1px solid black; */
     height: auto;
@@ -125,7 +125,7 @@
     padding-top: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-#sidebar>#topNews{
+#leftSidebar>#topNews{
     box-sizing: border-box;
     margin-bottom: 15px;
 }
@@ -159,7 +159,7 @@
     margin-top: 7px;
     color: #7c809c;
 }
-#sidebar>#topNews{
+#leftSidebar>#topNews{
     /* border: 1px dotted teal; */
     padding: 7px;
     box-sizing: border-box;
@@ -168,7 +168,7 @@
  /* <-------Left sidebar --Technology data and div styling-----> */
 
 
- #sidebar>#techNews{
+ #leftSidebar>#techNews{
     box-sizing: border-box;
     margin-bottom: 15px;
 }
