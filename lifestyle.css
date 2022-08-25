@@ -107,7 +107,9 @@
     font-size: 15px;
     color:  #7c809c;
 }
-
+.newsDivs>.imgBox{
+    width: 30%;
+}
 .imgBox>img{
     width: 100%;
 }
