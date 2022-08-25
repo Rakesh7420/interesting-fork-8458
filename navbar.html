@@ -77,3 +77,13 @@
 </body>
 </html>
 
+
+<script>
+    let data = JSON.parse(localStorage.getItem('Login-Data'));
+
+    if(data.email !== "") {
+
+    document.querySelector('#mylogin').innerText = "My Account";
+    
+    }
+</script>
