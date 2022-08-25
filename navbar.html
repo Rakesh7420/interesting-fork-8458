@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>navbar</title>
     <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
@@ -47,7 +47,7 @@
 
                 <div>
                 <img src="https://cdn-icons-png.flaticon.com/128/3711/3711310.png" alt="error">
-                <a href=""><p><b>Sign-In</b></p></a>
+                <a id="mylogin" href="login.html"><p><b>Sign-In</b></p></a>
                 </div>
             </span>
           
@@ -76,4 +76,16 @@
     </div>
 </body>
 </html>
+
+
+
+<script>
+    let data = JSON.parse(localStorage.getItem('Login-Data'));
+
+    if(data.email !== "") {
+
+    document.querySelector('#mylogin').innerText = "My Account";
+    
+    }
+</script>
 
