@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar{
+    width: 100%;
+    border: 1px solid black;
+    height: 120px;
+    position: fixed;
+    background-color: white;
+    top: 0;
+
+}
+
+#pageLinksBar{
+    width: 100%;
+    border: 1px solid grey;
+    height: 70px;
+    margin-bottom: 20px;
+    background-color:white;
+    margin-top: 120px;
+}
+
+#container{
+    width: 80%;
+    margin: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    box-sizing: border-box;
+    gap: 10px;
+    margin-top: 20px;
+
+}
+
+        /* <--------------Lifestyle News div styling----------------------> */
+
+#lifestyleContent{
+    width: 50%;
+    /* border: 1px solid blue; */
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#lifestyleContent>h1{
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+    border-right: 2px solid red;
+    border-left: 2px solid red;
+    margin-bottom: 20px;
+}
+.newsDivs{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 7px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    justify-content: space-evenly;
+}
+.newsDivs:hover{
+    width: 101%;
+}
+.newsDivs:nth-child(2){
+    /* border: 2px solid brown; */
+    display: block;
+}
+.newsDivs:nth-child(2)>.imgBox{
+    width: 95%;
+    margin: auto;
+    
+}
+.newsDivs:nth-child(2)>.contentBox>a{
+   font-size: 25px;
+}
+
+
+.newsDivs>.contentBox{
+    width: 60%;
+    padding: 10px;
+}
+
+.newsDivs>.contentBox>a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 900;
+    color: black;
+}
+
+.newsDivs>.contentBox>a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.newsDivs>.contentBox>.author{
+    font-size: 15px;
+    font-weight: 900;
+    margin-top: 10px;
+    color: #42b2cd;
+}
+
+.newsDivs>.contentBox>.newsDate{
+    font-size: 15px;
+    color:  #7c809c;
+}
+.newsDivs>.imgBox{
+    width: 30%;
+}
+.imgBox>img{
+    width: 100%;
+}
+
+
+    /* <-------------------Left Sidebar styling ------------------------->*/
+
+#leftSidebar{
+    width: 25%;
+    /* border: 1px solid black; */
+    height: auto;
+    box-sizing: border-box;
+    padding-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#leftSidebar>#topNews{
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+
+#topNews>.leftBox{
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: rgba(34, 32, 32, 0.158) 0px 2px 8px 0px;
+}
+#topNews>.leftBox>a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 900;
+    color: black;
+}
+#topNews>.leftBox>a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#topNews>.leftBox>.p1{
+    font-size: 15px;
+    margin-top: 5px;
+    font-weight: 800;
+    color: #42b2cd;
+}
+#topNews>.leftBox>.leftDate{
+    font-size: 15px;
+    margin-top: 7px;
+    color: #7c809c;
+}
+#leftSidebar>#topNews{
+    /* border: 1px dotted teal; */
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+ /* <-------Left sidebar --Technology data and div styling-----> */
+
+
+ #leftSidebar>#techNews{
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+#techNews>.techDiv{
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: rgba(34, 32, 32, 0.158) 0px 2px 8px 0px;
+}
+#techNews>.techDiv>a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 900;
+    color: black;
+    text-align: center;
+}
+#techNews>.techDiv>a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#techNews>.techDiv>.date{
+    font-size: 15px;
+    margin-top: 7px;
+    color: #7c809c;
+}
+
+
+#techNews>.techDiv>img{
+    width: 80%;
+    display: block;
+}
+
+#techNews>.techDiv>.p1{
+    font-size: 15px;
+    margin-top: 5px;
+    font-weight: 800;
+    color: #42b2cd;
+}
+
+
+
+
+    /*  <----------------------Right Sidebar styling-------------------------> */
+
+
+#rightSidebar{
+    /* border: 1px solid black; */
+    width: 25%;
+    height: auto;
+    box-sizing: border-box;
+    padding-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#rightSidebar>#healthNews{
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+
+#healthNews>.leftBox{
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: rgba(34, 32, 32, 0.158) 0px 2px 8px 0px;
+}
+
+#healthNews>.rightBox{
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: rgba(34, 32, 32, 0.158) 0px 2px 8px 0px;
+}
+
+#healthNews>.rightBox>a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 900;
+    color: black;
+    text-align: center;
+}
+
+#healthNews>.rightBox>a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#healthNews>.rightBox>.p1{
+    font-size: 15px;
+    margin-top: 5px;
+    font-weight: 800;
+    color: #42b2cd;
+}
+#healthNews>.rightBox>.rightDate{
+    font-size: 15px;
+    margin-top: 7px;
+    color: #7c809c;
+}
+
+#healthNews>.rightBox>img{
+    width: 80%;
+    display: block;
+}
+
+     /* ----------- sidebars headings styling - both right and left------------ */
+
+.sideHeading{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    border-right: 2px solid red;
+    border-left: 2px solid red;
+    margin-bottom: 20px;   
+}
+
+/* <----------------right Sidebar ---Bitcoin data styling------------------> */
+#rightSidebar>#bitcoin{
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+#bitcoin>.bitcoinDiv{
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: rgba(34, 32, 32, 0.158) 0px 2px 8px 0px;
+}
+#bitcoin>.bitcoinDiv>a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 900;
+    color: black;
+    text-align: center;
+}
+#bitcoin>.bitcoinDiv>a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#bitcoin>.bitcoinDiv>.date{
+    font-size: 15px;
+    margin-top: 7px;
+    color: #7c809c;
+}
+
+
+#bitcoin>.bitcoinDiv>img{
+    width: 80%;
+    display: block;
+}
+
+#bitcoin>.bitcoinDiv>.p1{
+    font-size: 15px;
+    margin-top: 5px;
+    font-weight: 800;
+    color: #42b2cd;
+}
