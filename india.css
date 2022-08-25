@@ -1,0 +1,65 @@
+#container{
+    display: flex;
+    margin: auto;
+    width: 90%;
+    justify-content: center;
+}
+#IndiaNews{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 40%;
+    border: 1px solid black;
+    align-items: center;
+    
+}
+#IndiaNews >div{
+    margin: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+}
+#IndiaNews >div h2{
+    font-family: sans-serif;
+    font-weight: 790;
+    font-size: 20px;
+    line-height: 24px;
+    font-style: normal;
+}
+#IndiaNews div img{
+width: 100%;
+border-radius: 5px;
+overflow: hidden;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}.left p{
+    color: gray;
+    margin-top: -10px;
+}
+.right{
+width: 100% ;
+height: fit-content;
+background-color:black ;
+padding-top: 5px;
+padding-bottom: 5px;
+border-radius: 5px;
+display: flex;
+align-items: center;
+color: aliceblue;
+}
+#TopNews{
+   border: 1px solid red;
+   width: 20%;
+   
+}
+#Photos{
+    border: 1px solid red;
+   width: 20%;
+}
+
