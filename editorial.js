@@ -14,6 +14,7 @@ console.log("i am here!")
         console.log(err);
     })
 
+    // appended editorials//
          let editorialContainer = document.getElementById("editorialContent")
 
     function appendEditorials(data){
