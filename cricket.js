@@ -45,6 +45,8 @@ function displayNews(data){
                     button.style.backgroundColor = 'red'
                     console.log("COLOR DONE")
                     return;
+                }else{
+                    button.style.backgroundColor = 'white'
                 }
             }
         
@@ -132,7 +134,9 @@ function saveNews(e,i){
          }
       }
     data.push(e);
+    
     localStorage.setItem("savedNews",JSON.stringify(data));
+
     // }
     // document.querySelector(".btn").setAttribute("class","click")
 
@@ -152,7 +156,7 @@ for(let i=0;i<Newsdata.length;i++){
      
     for(let j=0;j<data.length;j++){
         if(Newsdata[i].title==data[j].title){
-            button.style.backgroundColor = 'salmon';
+            // button.style.backgroundColor = 'salmon';
         }
     }
     

@@ -69,21 +69,5 @@ color: aliceblue;
     text-decoration: none;
     overflow: hidden;
     height: 20px;
-    background-color: salmon;
-}
-.click{
-    background-color: red;
-    width: 20px;
-    border-radius: 100%;
-    text-decoration: none;
-    overflow: hidden;
-    height: 20px;
-}
-.click2{
-    background-color:blue;
-    width: 20px;
-    border-radius: 100%;
-    text-decoration: none;
-    overflow: hidden;
-    height: 20px;
+    
 }

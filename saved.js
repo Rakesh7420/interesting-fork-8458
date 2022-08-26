@@ -1,5 +1,6 @@
 let news=JSON.parse(localStorage.getItem("savedNews"))
 displaysavedNews(news)
+
 function displaysavedNews(data){
     data.forEach(function (elem,i){
         if(i<=5){
@@ -25,6 +26,7 @@ function displaysavedNews(data){
         bottom.append(head,time)
         
          div.append(top,bottom)
-        container.append(div);}
+        container.append(div);
+    }
     });
 }
