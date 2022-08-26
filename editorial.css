@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar{
+    width: 100%;
+    border: 1px solid black;
+    height: 120px;
+    position: fixed;
+    background-color: white;
+    top: 0;
+
+}
+
+#LinksBar{
+    width: 100%;
+    border: 1px solid grey;
+    height: 70px;
+    margin-bottom: 20px;
+    background-color:white;
+    margin-top: 120px;
+}
+
+#container{
+    width: 80%;
+    margin: auto;
+    border: 1px solid red;
+    display: flex;
+    box-sizing: border-box;
+    gap: 10px;
+    margin-top: 20px;
+
+}
+
+#editorialContent{
+    width: 50%;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#editorialContent>h1{
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+    border-right: 2px solid red;
+    border-left: 2px solid red;
+    margin-bottom: 20px;
+}
+
+.editorialDiv{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 7px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    justify-content: space-evenly;
+    border-radius: 7px;
+}
+
+.editorialDiv:hover{
+    width: 101%;
+}
+
+.editorialDiv:nth-child(2){
+    display: block;
+}
+
+.editorialDiv:nth-child(2)>.imgBox{
+    width: 95%;
+    margin: auto;
+    
+}
+.editorialDiv:nth-child(2)>.contentBox>a{
+    font-size: 25px;
+ }
+
+ .editorialDiv>.contentBox{
+    width: 60%;
+    padding: 10px;
+}
+
+.editorialDiv>.contentBox>a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 900;
+    color: black;
+}
+
+.editorialDiv>.contentBox>a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.editorialDiv>.contentBox>.authorName{
+    font-size: 15px;
+    font-weight: 900;
+    margin-top: 10px;
+    color: #42b2cd;
+}
+
+.editorialDiv>.contentBox>.editorialDate{
+    font-size: 15px;
+    color:  #7c809c;
+}
+
+.imgBox>img{
+    width: 100%;
+}
+.editorialDiv>.imgBox{
+    width: 30%;
+}
+
+
+
+ 
+
+               /* <-------------------Left Sidebar styling ------------------------->*/
+
+#leftSidebar{
+    width: 25%;
+    border: 1px solid black;
+    height: auto;
+    box-sizing: border-box;
+    padding-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+              /*  <----------------------Right Sidebar styling-------------------------> */
+
+
+#rightSidebar{
+    border: 1px solid black;
+    width: 25%;
+    height: auto;
+    box-sizing: border-box;
+    padding-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
