@@ -22,7 +22,7 @@
     border-radius: 5px;
     padding: 10px;
 }
-#IndiaNews >div h2{
+#IndiaNews >div h3{
     font-family: sans-serif;
     font-weight: 790;
     font-size: 20px;
@@ -63,3 +63,27 @@ color: aliceblue;
    width: 20%;
 }
 
+.btn{
+    width: 20px;
+    border-radius: 100%;
+    text-decoration: none;
+    overflow: hidden;
+    height: 20px;
+    background-color: salmon;
+}
+.click{
+    background-color: red;
+    width: 20px;
+    border-radius: 100%;
+    text-decoration: none;
+    overflow: hidden;
+    height: 20px;
+}
+.click2{
+    background-color:blue;
+    width: 20px;
+    border-radius: 100%;
+    text-decoration: none;
+    overflow: hidden;
+    height: 20px;
+}

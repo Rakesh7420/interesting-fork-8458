@@ -1,0 +1,47 @@
+#container{
+    display: flex;
+    margin: auto;
+    width: 90%;
+    justify-content: center;
+}
+#saved{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 40%;
+    border: 1px solid black;
+    align-items: center;
+    }
+    #saved >div{
+        margin: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        font-size: 15px;
+        align-items: center;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    #saved >div p{
+        color: gray;
+        margin-top: -10px;
+    }
+    #saved >div h3{
+        font-family: sans-serif;
+        font-weight: 790;
+        font-size: 20px;
+        line-height: 24px;
+        font-style: normal;
+    }
+    #saved div img{
+        width: 100%;
+        border-radius: 5px;
+        overflow: hidden;
+        }
+        #topNews{
+            border: 1px solid red;
+            width: 20%;
+            
+         }
+         #photos{
+            border: 1px solid red;
+           width: 20%;
+        }
