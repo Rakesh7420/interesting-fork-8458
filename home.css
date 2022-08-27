@@ -11,23 +11,17 @@
 
 
 
-
-
-
-
-
-#topbar {
+#topbar{
     width: 70%;
     margin: auto;
 
-    height: 300px
+    height: 300px;
     /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-#topbar>h1 {}
 
 #news {
     display: flex;
