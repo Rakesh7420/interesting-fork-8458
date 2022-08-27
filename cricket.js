@@ -17,7 +17,7 @@ async function fetchDataIN(){
 fetchDataIN();
 function displayNews(data){
     data.forEach(function (elem,i){
-        if(i<=5){
+        if(i<=25){
 
         
         let div=document.createElement("div");
@@ -27,7 +27,7 @@ function displayNews(data){
         let right=document.createElement("div")
         right.setAttribute("class","right")
         let container=document.querySelector("#IndiaNews");
-        let head=document.createElement("h3")
+        let head=document.createElement("h2")
         head.innerText=elem.title
         let image=document.createElement("img")
         image.setAttribute("src",elem.urlToImage)
@@ -36,30 +36,41 @@ function displayNews(data){
         time.innerText=("Published on"+" "+elem.publishedAt)
         let button=document.createElement("button")
         button.setAttribute("class","btn")
-        button.innerText=""
+        button.innerText="Save"
         button.onclick=function(){
             saveNews(elem,i)
             let data=JSON.parse(localStorage.getItem("savedNews"))||[]
             for(let i=0;i<data.length;i++){
                 if(data[i].title==elem.title){
-                    button.style.backgroundColor = 'red'
-                    console.log("COLOR DONE")
+                    button.style.backgroundColor = 'gray'
+                    button.innerText="Saved"
                     return;
                 }else{
                     button.style.backgroundColor = 'white'
+                    button.innerText="Save"
                 }
             }
         
             
             
         }
+         let dis=document.createElement("h4");
+        // dis.setAttribute("class","")
+        dis.innerText=elem.description
        
        
     
-        left.append(head,time,button)
+        if(i==0){
+            div.setAttribute("class","first")
+            div.append(head,time,dis,image,button)
+            container.append(div);
+        }else{
+            left.append(head,time,button)
         right.append(image)
          div.append(left,right)
-        container.append(div);}
+        container.append(div);
+        }
+    }
     });
 }
 
@@ -104,41 +115,18 @@ function displayTopNews(data){
 
 
 function saveNews(e,i){
-    
-    // if(removeNews(elem,i)==false){
     let data=JSON.parse(localStorage.getItem("savedNews"))||[]
-    // let newData;
-    // data.forEach(function(el){
-    //     if(e.title==el.title){
-    //         // console.log("el",el)
-    //         // console.log("e",e)
-    //       newData=data.filter((el,e)=>{
-    //         return el!==e
-    //       })
-          
-           
-    //     }
-    // })
-    // console.log("NEW",newData);
       for(let i=0;i<data.length;i++){
          if(e.title===data[i].title){
-            // console.log("e",e)
             data.splice(i,1)
             
             localStorage.setItem("savedNews",JSON.stringify(data)) 
-            // let newid=e.
-
-            // document.querySelector(".click").setAttribute("class","click2")
-            // console.log("splice",data)
              return;
          }
       }
     data.push(e);
     
     localStorage.setItem("savedNews",JSON.stringify(data));
-
-    // }
-    // document.querySelector(".btn").setAttribute("class","click")
 
 }
 function removeNews(id){
@@ -152,12 +140,48 @@ let news =JSON.parse(localStorage.getItem("savedNews"))
 }
 let data=JSON.parse(localStorage.getItem("savedNews"))||[]
 
-for(let i=0;i<Newsdata.length;i++){
-     
-    for(let j=0;j<data.length;j++){
-        if(Newsdata[i].title==data[j].title){
-            // button.style.backgroundColor = 'salmon';
+async function fetchphotoData(){
+    try{
+    let fdata=await fetch("https://newsapi.org/v2/everything?q=sports&apiKey=309f6236b88c45899dc51d7af64c023a");
+    let data= await fdata.json();
+    displayphotos(data.articles);
+
+}
+   catch(error){
+      console.log("error",error);
+   }
+
+
+}
+fetchphotoData()
+function displayphotos(news){
+    news.forEach(function(el,i){
+         if(i<=8){
+        let div=document.createElement("div")
+        div.setAttribute("class","buck")
+        left=document.createElement("div")
+        left.setAttribute("class","photoleft")
+        right=document.createElement("div")
+        right.setAttribute("class","photoright")
+         let head=document.createElement("h5")
+         head.innerText=el.title
+        //  console.log(el.description)
+        let img=document.createElement("img")
+        img.setAttribute("src",el.urlToImage)
+         let container=document.querySelector("#Photos")
+        if(i==0){
+            div.setAttribute("class","buck1")
+            div.append(img,head);
+            container.append(div)
+
+        }else{
+             left.append(head);
+             right.append(img);
+            div.append(left,right)
+            container.append(div)
         }
     }
-    
+
+    });
+
 }

@@ -1,3 +1,6 @@
+body{
+    background-color: rgb(245,245,245);
+}
 #container{
     display: flex;
     margin: auto;
@@ -9,25 +12,58 @@
     flex-direction: column;
     margin: 10px;
     width: 40%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     align-items: center;
+    background-color: white;
     
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    /* align-items: flex-start; */
+    /* box-shadow: none; */
+    direction: none;
+}
+.first h4{
+    color: gray;
+    margin-top: -20px;
+    margin-bottom: -1px;
+}.first p{
+    color: gray;
+    margin-top: -20px;
+    margin-bottom: 40px;
+}
+.first button{
+    margin-top: 20px;
 }
 #IndiaNews >div{
     margin: 10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     font-size: 15px;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     border-radius: 5px;
     padding: 10px;
 }
-#IndiaNews >div h3{
-    font-family: sans-serif;
-    font-weight: 790;
+.bracket{
+    color:rgb(101,209,232);
+}
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+
+}
+.head h3{
+    font-family: Georgia, serif;
     font-size: 20px;
-    line-height: 24px;
-    font-style: normal;
+}
+#IndiaNews >div h1{
+    font-family: Georgia, serif;
+   font-size: 25px;
 }
 #IndiaNews div img{
 width: 100%;
@@ -54,20 +90,95 @@ align-items: center;
 color: aliceblue;
 }
 #TopNews{
-   border: 1px solid red;
+   /* border: 1px solid red; */
+   margin: 10px;
    width: 20%;
-   
+   background-color: white;
+   height: fit-content;
+   display: flex;
+   flex-direction: column;
+   padding: 10px;
+   /* padding-top: 200px; */
+}
+#TopNews p{
+    color: gray;
+    margin-top: -20px;
+}#TopNews h3{
+    text-align: center;
 }
 #Photos{
-    border: 1px solid red;
-   width: 20%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 20%;
+    /* border: 1px solid black; */
+    align-items: center;
+    /* padding-top: 200px; */
+    background-color: white;
+    height: fit-content;
 }
 
 .btn{
-    width: 20px;
-    border-radius: 100%;
+    width: 80px;
+    overflow:hidden;
+    padding: 1px;
+    /* border-radius: 100%; */
     text-decoration: none;
-    overflow: hidden;
-    height: 20px;
+    /* overflow: hidden; */
+    height: 32px;
+    align-items: center;
+    text-align: center;
+    padding: 1px;
+    border-radius: 5px;
+    border: 1px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     
+}
+.buck img{
+    width: 30%;
+}
+.buck {
+    margin: 10px;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    /* border-radius: 5px; */
+    border-bottom:1px solid gray;
+}
+
+/* .buck1{
+    display: flex;
+    overflow: hidden;
+} */
+.buck1{
+    margin: 10px;
+    border-bottom:1px solid gray;
+}
+.buck1 img{
+width: 100%;
+overflow: hidden;
+}
+.photoright img{
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.photoleft{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    /* border: 1px solid green; */
+
+}
+.photoright{
+    width: 100% ;
+    height: fit-content;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    /* border: 1px solid black; */
 }
