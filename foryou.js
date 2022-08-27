@@ -1,6 +1,6 @@
 async function citynews(){
     console.log()
-    let url=`https://newsapi.org/v2/everything?q=entertainment&apiKey=2f58e9bcb00342cb8cfbf66eca44ad59`
+    let url=`https://newsapi.org/v2/everything?q=for%20you&apiKey=2f58e9bcb00342cb8cfbf66eca44ad59`
     let res=await fetch(url);
     let data=await res.json()
     console.log(data.articles)
@@ -8,7 +8,7 @@ async function citynews(){
 }
 citynews();
 function append_news(data_news){
-    let container_news=document.getElementById("entertainmentnews")
+    let container_news=document.getElementById("foryounews")
     container_news.innerHTML="";
 
     data_news.forEach((el,i)=>{
