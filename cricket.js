@@ -1,10 +1,10 @@
-let Newsdata;
+
 async function fetchDataIN() {
   try {
     let fdata = await fetch(
-      "https://newsapi.org/v2/everything?q=cricket&apiKey=d39443aca3534ef3a8ee7ad62a6a7660"
+      "https://newsapi.org/v2/everything?q=cricket&apiKey=2957328f0c6947efa41e73e2f9058927"
     );
-    Newsdata = await fdata.json();
+    let Newsdata = await fdata.json();
 
     displayNews(Newsdata.articles);
   } catch (error) {
@@ -13,8 +13,8 @@ async function fetchDataIN() {
 }
 
 fetchDataIN();
-function displayNews(data) {
-  data.forEach(function (elem, i) {
+function displayNews(art) {
+  art.forEach(function (elem, i) {
     if (i <= 25) {
       let div = document.createElement("div");
       div.setAttribute("class", "class1");
@@ -52,7 +52,7 @@ function displayNews(data) {
       dis.innerText = elem.description;
 
       if (i == 0) {
-        div.setAttribute("class", "first");
+        div.setAttribute("class", "big");
         div.append(head, time, dis, image, button);
         container.append(div);
       } else {
@@ -68,7 +68,7 @@ function displayNews(data) {
 async function fetchDataINtop() {
   try {
     let fdata = await fetch(
-      "https://newsapi.org/v2/everything?q=health&apiKey=d39443aca3534ef3a8ee7ad62a6a7660"
+      "https://newsapi.org/v2/everything?q=health&apiKey=2957328f0c6947efa41e73e2f9058927"
     );
     let data = await fdata.json();
     displayTopNews(data.articles);
@@ -124,7 +124,7 @@ let data = JSON.parse(localStorage.getItem("savedNews")) || [];
 async function fetchphotoData() {
   try {
     let fdata = await fetch(
-      "https://newsapi.org/v2/everything?q=sports&apiKey=d39443aca3534ef3a8ee7ad62a6a7660"
+      "https://newsapi.org/v2/everything?q=sports&apiKey=2957328f0c6947efa41e73e2f9058927"
     );
     let data = await fdata.json();
     displayphotos(data.articles);

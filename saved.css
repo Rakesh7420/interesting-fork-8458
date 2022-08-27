@@ -20,9 +20,30 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
+        align-items: center;
         /* box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px; */
         width:90%;
         overflow: hidden;
+        margin-top: 10px;
+    }
+    .top1{
+        margin: 10px;
+        padding: 10px;
+        
+    }
+    .top1:hover{
+        /* display: flex; */
+        text-align: start;
+        color:rgb(101,209,232);
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+    .tophead{
+        display: flex;
+        text-align: start;
+        color:black;
+    }
+    .tophead:hover{
+        color:rgb(101,209,232);
     }
     .bracket{
         color: rgb(101,209,232);
@@ -38,7 +59,7 @@ body{
     }
     #saved >div p{
         color: gray;
-        margin-top: -10px;
+        margin-top:5px;
     }
     #saved >div h3{
         font-family: sans-serif;
@@ -65,7 +86,8 @@ body{
          }
          #topNews p{
             color: gray;
-            margin-top: -20px;
+            color: black;
+            /* margin-top: -20px; */
         }#topNews h3{
             text-align: center;
         }
@@ -88,10 +110,21 @@ body{
             display: flex;
             align-items: center;
             border-bottom:1px solid gray;
+            padding: 5px;
+            
+        }
+        .buck:hover{
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            border-radius: 5px;
         }
         .buck1{
             margin: 10px;
             border-bottom:1px solid gray;
+            padding: 2px 0px;
+        } 
+        .buck1:hover{
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            border-radius: 5px;
         }
         .buck1 img{
         width: 100%;

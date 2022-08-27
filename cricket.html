@@ -52,7 +52,7 @@
         <div id="bottom_sidebar">
           <div>
             <h4>My Account</h4>
-            <h4>Saved Articles</h4>
+            <h4><a href="saved.html">Saved Articles</a></h4>
           </div>
           <div><h3 onclick="clearls()">Signout</h3></div>
         </div>
@@ -179,7 +179,7 @@
       </div>
     </div>
 
-    <a href="saved.html">saved</a>
+    <!-- <a href="saved.html">saved</a> -->
     <div id="container">
       <div id="TopNews">
         <div class="head">
@@ -450,21 +450,21 @@
 </html>
 <script src="cricket.js"></script>
 <script>
-  let data = JSON.parse(localStorage.getItem("Login-Data"));
+  let datas = JSON.parse(localStorage.getItem("Login-Data"));
   // document.getElementById("logout").addEventListener("click", clearls);
   let login = () => {
     let container = document.getElementById("mylogin");
-    if (!data) {
+    if (!datas) {
       window.location.href = "login.html";
     } else {
-      console.log("data available");
+      // console.log("data available");
       let image = document
         .getElementById("user_img")
-        .setAttribute("src", data.img);
+        .setAttribute("src", datas.img);
 
-      console.log(data.img);
-      document.getElementById("user_name").innerText = data.name;
-      document.getElementById("user_mail").innerText = data.email;
+      // console.log(data.img);
+      document.getElementById("user_name").innerText = datas.name;
+      document.getElementById("user_mail").innerText = datas.email;
       document.getElementById("mySidepanel2").style.width = "420px";
     }
   };
@@ -472,13 +472,13 @@
     document.getElementById("mySidepanel2").style.width = "0";
   }
 
-  if (data.email !== "") {
+  if (datas.email !== "") {
     document.querySelector("#mylogin").innerText = "MY ACCOUNT";
     document.getElementById("logout").innerText = "Log Out";
   }
   let clearls = () => {
     localStorage.clear();
-    console.log("hello");
+    // console.log("hello");
     window.location.reload();
     document.getElementById("logout").innerText = "";
     document.querySelector("#mylogin").innerText = "SignIn";
