@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* navbar code */
+
+.nav {
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #011e29;
+    color: white;
+}
+
+.nav>div {
+    width: fit-content;
+    height: auto;
+}
+
+span {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+
+span>img {
+    width: 20px;
+}
+
+#left {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    align-items: center;
+    gap: 10px;
+}
+
+#icon+p+p {
+    border: 1px solid;
+}
+
+#middle>a>img {
+    width: 400px;
+    border-radius: 5px;
+}
+
+
+#box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 10px;
+}
+
+#box>div {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+
+a {
+    color: white;
+}
+
+#box>div>img {
+    width: 20px;
+    margin-right: 2px;
+}
+
+#right>div {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
+}
+
+#right>div>a {
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+
+}
+
+
+/* tags section */
+
+.tag {
+    border: 1px solid;
+    height: 40px;
+}
+
+
+.tag>span {
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tag>span>a {
+    color: #212121;
+    font-family: sans-serif;
+    font-weight: bold;
+}

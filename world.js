@@ -4,14 +4,14 @@ let a;
 
 let latest = async () => {
   let res = await fetch(
-    "https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=d39443aca3534ef3a8ee7ad62a6a7660"
+    "https://newsapi.org/v2/top-headlines?q=world&language=en&apiKey=8310b5752c8c4c30b984ed3c77811b9d"
   );
   latestnewsdata = await res.json();
   a = latestnewsdata.articles[0];
   // console.log(a);
   localStorage.setItem("news", JSON.stringify(a));
   let articles = latestnewsdata.articles;
-  console.log("articles:", articles);
+  // console.log("articles:", articles);
   let container = document.getElementById("india");
   appendlatest(articles, container);
 };
@@ -19,11 +19,11 @@ latest();
 
 let topnews = async () => {
   let res = await fetch(
-    "https://newsapi.org/v2/top-headlines?category=sports&language=en&apiKey=8310b5752c8c4c30b984ed3c77811b9d"
+    "https://newsapi.org/v2/top-headlines?language=en&apiKey=8310b5752c8c4c30b984ed3c77811b9d"
   );
   topnewsdata = await res.json();
   let articles = topnewsdata.articles;
-  // console.log("articles:", articles);
+  console.log("articles2:", articles);
   let container = document.getElementById("topnews");
   appendlatest(articles, container);
 };
