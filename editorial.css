@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar{
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    background-color: white;
+    top: 0;
+
+}
+
+#LinksBar{
+    width: 100%;
+    height: 70px;
+    margin-bottom: 20px;
+    background-color:white;
+    margin-top: 120px;
+}
+
+#container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    box-sizing: border-box;
+    gap: 10px;
+    margin-top: 20px;
+
+}
+
+#editorialContent{
+    width: 50%;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#editorialContent>h1{
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+    border-right: 2px solid red;
+    border-left: 2px solid red;
+    margin-bottom: 20px;
+}
+
+.editorialDiv{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 7px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    justify-content: space-evenly;
+    border-radius: 7px;
+}
+
+.editorialDiv:hover{
+    width: 101%;
+}
+
+.editorialDiv:nth-child(2){
+    display: block;
+}
+
+.editorialDiv:nth-child(2)>.imgBox{
+    width: 95%;
+    margin: auto;
+    
+}
+.editorialDiv:nth-child(2)>.contentBox>a{
+    font-size: 25px;
+ }
+
+ .editorialDiv>.contentBox{
+    width: 60%;
+    padding: 10px;
+}
+
+.editorialDiv>.contentBox>a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 900;
+    color: black;
+}
+
+.editorialDiv>.contentBox>a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.editorialDiv>.contentBox>.authorName{
+    font-size: 15px;
+    font-weight: 900;
+    margin-top: 10px;
+    color: #42b2cd;
+}
+
+.editorialDiv>.contentBox>.editorialDate{
+    font-size: 15px;
+    color:  #7c809c;
+}
+
+.editorialDiv>.imgBox{
+    width: 30%;
+}
+.imgBox>img{
+    width: 100%;
+}
+
+
+
+ 
+
+               /* <-------------------Left Sidebar styling ------------------------->*/
+
+#leftBox{
+    width: 30%;
+    height: auto;
+    box-sizing: border-box;
+    padding-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+#leftBox>#topNews{
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+
+#topNews>.leftDiv{
+    width: 95%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: rgba(34, 32, 32, 0.158) 0px 2px 8px 0px;
+}
+#topNews>.leftDiv>a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 900;
+    color: black;
+}
+#topNews>.leftDiv>a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#topNews>.leftDiv>.source{
+    font-size: 15px;
+    margin-top: 5px;
+    font-weight: 800;
+    color: #42b2cd;
+}
+#topNews>.leftDiv>.leftDate{
+    font-size: 15px;
+    margin-top: 7px;
+    color: #7c809c;
+}
+#leftSidebar>#topNews{
+    /* border: 1px dotted teal; */
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+   /* ----------- sidebars headings styling - both right and left------------ */
+
+   .sideHeading{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    border-right: 2px solid red;
+    border-left: 2px solid red;
+    margin-bottom: 20px;   
+}
+
+
+              /*  <----------------------Right Sidebar styling-------------------------> */
+
+
+#rightBox{
+    width: 30%;
+    height: auto;
+    box-sizing: border-box;
+    padding-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+  
+
+/* <-------right sidebar bollywood divs styling-------> */
+
+#rightBox>#bollywood{
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+#bollywood>.bollyDiv{
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: rgba(34, 32, 32, 0.158) 0px 2px 8px 0px;
+}
+
+#bollywood>.bollyDiv>a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 900;
+    color: black;
+    text-align: center;
+}
+
+#bollywood>.bollyDiv>a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#bollywood>.bollyDiv>.bollyAuthor{
+    font-size: 15px;
+    margin-top: 5px;
+    font-weight: 800;
+    color: #42b2cd;
+}
+
+#bollywood>.bollyDiv>.bollyDate{
+    font-size: 15px;
+    margin-top: 7px;
+    color: #7c809c;
+}
+
+#bollywood>.bollyDiv>img{
+    width: 95%;
+    display: block;
+}
+
+/* <-----trending news divs ---right sidebar styling */
+
+#rightBox>#trend{
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+#trend>.trendDiv{
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: rgba(34, 32, 32, 0.158) 0px 2px 8px 0px;
+}
+
+#trend>.trendDiv>a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 900;
+    color: black;
+    text-align: center;
+}
+
+#trend>.trendDiv>a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#trend>.trendDiv>.trendAuthor{
+    font-size: 15px;
+    margin-top: 5px;
+    font-weight: 800;
+    color: #42b2cd;
+}
+
+#trend>.trendDiv>.trendDate{
+    font-size: 15px;
+    margin-top: 7px;
+    color: #7c809c;
+}
+
+#trend>.trendDiv>img{
+    width: 95%;
+    display: block;
+}
+
+
+/* popular news divs styling on left sidebar */
+#leftBox>#popNews{
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+
+#popNews>.popDiv{
+    width: 95%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: rgba(34, 32, 32, 0.158) 0px 2px 8px 0px;
+}
+
+#popNews>.popDiv>img{
+    width: 95%;
+    display: block;
+}
+
+
