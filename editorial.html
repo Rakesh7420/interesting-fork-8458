@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>India news</title>
-    <link rel="stylesheet" href="worldnews.css" />
+    <title>Editorials</title>
+    <link rel="stylesheet" href="editorial.css" />
     <link rel="stylesheet" href="navbar.css" />
     <link rel="stylesheet" href="footer.css" />
   </head>
@@ -179,15 +179,29 @@
       </div>
     </div>
 
-    <div id="topbar">
-      <h2>World News</h2>
-      <h2>Top News</h2>
-    </div>
+    <div id="LinksBar"></div>
+    <div id="container">
+      <div id="leftBox">
+        <div id="topNews">
+          <h1 class="sideHeading">Top News</h1>
+        </div>
+        <div id="popNews">
+          <h1 class="sideHeading">Popular News</h1>
+        </div>
+      </div>
 
-    <div id="news">
-      <div id="india"></div>
-      <div id="middle"></div>
-      <div id="topnews"></div>
+      <div id="editorialContent">
+        <h1>Editorials</h1>
+      </div>
+
+      <div id="rightBox">
+        <div id="bollywood">
+          <h1 class="sideHeading">Bollywood</h1>
+        </div>
+        <div id="trend">
+          <h1 class="sideHeading">Trending</h1>
+        </div>
+      </div>
     </div>
     <div id="footer">
       <div class="footer">
@@ -433,7 +447,7 @@
     </div>
   </body>
 </html>
-<script src="world.js"></script>
+<script src="editorial.js"></script>
 <script>
   let data = JSON.parse(localStorage.getItem("Login-Data"));
   // document.getElementById("logout").addEventListener("click", clearls);

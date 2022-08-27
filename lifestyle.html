@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>India news</title>
-    <link rel="stylesheet" href="worldnews.css" />
+    <title>Lifestyle News</title>
+    <link rel="stylesheet" href="lifestyle.css" />
     <link rel="stylesheet" href="navbar.css" />
     <link rel="stylesheet" href="footer.css" />
   </head>
@@ -179,15 +179,30 @@
       </div>
     </div>
 
-    <div id="topbar">
-      <h2>World News</h2>
-      <h2>Top News</h2>
-    </div>
+    <div id="pageLinksBar"></div>
+    <div id="container">
+      <div id="leftSidebar">
+        <div id="topNews">
+          <h1 class="sideHeading">Top News</h1>
+        </div>
 
-    <div id="news">
-      <div id="india"></div>
-      <div id="middle"></div>
-      <div id="topnews"></div>
+        <div id="techNews">
+          <h1 class="sideHeading">Technology News</h1>
+        </div>
+      </div>
+
+      <div id="lifestyleContent">
+        <h1>Lifestyle</h1>
+      </div>
+
+      <div id="rightSidebar">
+        <div id="healthNews">
+          <h1 class="sideHeading">Health News</h1>
+        </div>
+        <div id="bitcoin">
+          <h1 class="sideHeading">Bitcoin News</h1>
+        </div>
+      </div>
     </div>
     <div id="footer">
       <div class="footer">
@@ -433,7 +448,7 @@
     </div>
   </body>
 </html>
-<script src="world.js"></script>
+<script src="./lifestyle.js"></script>
 <script>
   let data = JSON.parse(localStorage.getItem("Login-Data"));
   // document.getElementById("logout").addEventListener("click", clearls);

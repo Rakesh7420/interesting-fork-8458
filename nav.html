@@ -3,7 +3,7 @@
   <head>
     <link rel="stylesheet" href="navbar.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
+    <!-- <style>
       body {
         font-family: "Lato", sans-serif;
       }
@@ -12,7 +12,7 @@
         width: 0px;
         position: fixed;
         z-index: 1;
-        /* height: 250px;  */
+        /* /* height: 250px; 
         top: 0;
         left: 0;
         background-color: #111;
@@ -22,7 +22,7 @@
       }
       .sidepanel {
         /* width: 400px; */
-      }
+      } 
 
       .sidepanel a {
         padding: 8px 8px 8px 32px;
@@ -217,8 +217,8 @@ padding: 10px;
      #user_mail{
       margin-top: 15PX;
       font-size: large;
-     }
-    </style>
+     } */
+    </style> -->
   </head>
   <body>
     <div id="mySidepanel" class="sidepanel">
@@ -232,12 +232,12 @@ padding: 10px;
       </div>
       <div id="middle_sidebar">
         <div id="div1">
-          <a href="">HOME</a>
-          <a href="">INDIA NEWS</a>
-          <a href="">ENTERTAINMENT</a>
-          <a href="">CRICKET</a>
+          <a href="home.html">HOME</a>
+          <a href="india.html">INDIA NEWS</a>
+          <a href="entertainmentpage.html">ENTERTAINMENT</a>
+          <a href="cricket.html">CRICKET</a>
           <a href="">EDUCATION </a>
-          <a href="">WORLD NEWS</a>
+          <a href="world.html">WORLD NEWS</a>
           <a href="">CITIES</a>
           <a href="">DAILY DIGEST</a>
           <a href="">OPINION </a>
@@ -346,16 +346,15 @@ padding: 10px;
 
     <div class="tag">
       <span>
-        <a href=""><p>Home</p></a>
-        <a href=""><p>Latest</p></a>
-        <a href=""><p>India</p></a>
-        <a href=""><p>World</p></a>
-        <a href=""><p>Noida</p></a>
-        <a href=""><p>Entertainment</p></a>
-        <a href=""><p>Cricket</p></a>
-        <a href=""><p>Lifestyle</p></a>
+        <a href="home.html"><p>Home</p></a>
+        <a href="india.html"><p>India</p></a>
+        <a href="world.html"><p>World</p></a>
+        <a href="mumbaipage1.html"><p>Mumbai</p></a>
+        <a href="entertaimentpage.html"><p>Entertainment</p></a>
+        <a href="cricket.html"><p>Cricket</p></a>
+        <a href="lifestyle.html"><p>Lifestyle</p></a>
         <a href=""><p>Astrology</p></a>
-        <a href=""><p>Editorials</p></a>
+        <a href="editorial.html"><p>Editorials</p></a>
         <a href=""><p>For You</p></a>
         <a href=""><p>Shop Now</p></a>
       </span>
@@ -382,6 +381,8 @@ padding: 10px;
       
       </div>
     </div>
+
+
     <script>
       let data = JSON.parse(localStorage.getItem("Login-Data"));
       let login = () => {
