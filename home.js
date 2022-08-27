@@ -1,27 +1,33 @@
+import {navbar,navbarJs} from "./component.js"
+document.getElementById("navbar").innerHTML= navbar()/////////
+window.addEventListener("scroll", navbarJs);
+
+
+
 let latestnewsdata;
 let topnewsdata;
 let a;
 let latest = async () => {
   let res = await fetch(
-    "https://newsapi.org/v2/everything?q=latest&apiKey=8310b5752c8c4c30b984ed3c77811b9d"
+    "https://newsapi.org/v2/everything?q=latest&apiKey=2f58e9bcb00342cb8cfbf66eca44ad59v"
   );
   latestnewsdata = await res.json();
-  a = latestnewsdata.articles[0];
+  // a = latestnewsdata.articles[0];
   // console.log(a);
   localStorage.setItem("news", JSON.stringify(a));
   let articles = latestnewsdata.articles;
-  // console.log("articles:", articles);
+  console.log("articles:", articles);
   let container = document.getElementById("latest");
   appendlatest(articles, container);
 };
 latest();
 let topnews = async () => {
   let res = await fetch(
-    "https://newsapi.org/v2/top-headlines?category=sports&language=en&apiKey=8310b5752c8c4c30b984ed3c77811b9d"
+    "https://newsapi.org/v2/top-headlines?category=sports&language=en&apiKey=2f58e9bcb00342cb8cfbf66eca44ad59v"
   );
   topnewsdata = await res.json();
   let articles = topnewsdata.articles;
-  // console.log("articles:", articles);
+  console.log("articles:", articles);
   let container = document.getElementById("topnews");
   appendlatest(articles, container);
 };
@@ -53,6 +59,8 @@ let appendlatest = (array, container) => {
   });
 };
 
+let middleContainer = document.getElementById("middle")
+
 let append = (el, container) => {
   let title = document.createElement("h2");
   title.innerText = el.title;
@@ -71,7 +79,7 @@ let append = (el, container) => {
   div.setAttribute("id", "middle_div");
 
   div.append(title, publish, img, desc);
-  container.append(div);
+  middleContainer.append(div);
 };
 
 function middle() {
