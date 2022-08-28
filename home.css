@@ -36,7 +36,8 @@
     flex-direction: column;
     width: 20%;
     /* border: 1px solid black; */
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
 }
 
 #topnews {
@@ -44,7 +45,12 @@
     /* display: flex; */
     width: 350px;
     /* border: 1px solid black; */
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* right: 0; */
+    /* position:fixed; */
+    /* overflow: scroll; */
+    height: fit-content     ;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
 }
 
 .latest_div {
@@ -99,13 +105,13 @@ font-weight: 550;
     width: 35%;
     padding: 10px;
     /* border: 1px solid blue;/ */
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
     /* border-radius: 15px; */
     /* margin-top: 800px; */
     height: fit-content;
     margin-left: 10px;
     margin-right: 10px;
-
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
 
 }
 
@@ -156,3 +162,8 @@ font-weight: 550;
 }
 
 /* top */
+#home{
+    font-size: larger;
+    text-decoration: underline;
+    color:rgb(101,209,232);
+}

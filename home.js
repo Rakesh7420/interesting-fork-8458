@@ -3,7 +3,7 @@ let topnewsdata;
 let a = [];
 let latest = async () => {
   let res = await fetch(
-    "https://newsapi.org/v2/everything?q=latest&apiKey=d39443aca3534ef3a8ee7ad62a6a7660"
+    "https://newsapi.org/v2/everything?q=latest&apiKey=309f6236b88c45899dc51d7af64c023a"
   );
   latestnewsdata = await res.json();
   for (let i = 0; i < 9; i++) {

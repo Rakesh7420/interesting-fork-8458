@@ -205,3 +205,8 @@ overflow: hidden;
     color:rgb(101,209,232);
     
 }
+.top1{
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
