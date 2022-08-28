@@ -17,7 +17,7 @@ body{
     background-color: white;
     
 }
-.first{
+.big{
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -25,28 +25,32 @@ body{
     /* box-shadow: none; */
     direction: none;
 }
-.first h4{
+.big h4{
     color: gray;
     margin-top: -20px;
     margin-bottom: -1px;
-}.first p{
+    text-align: start;
+    color: black;
+}.big p{
     color: gray;
-    margin-top: -20px;
+    /* margin-top: -20px; */
     margin-bottom: 40px;
 }
-.first button{
+.big button{
     margin-top: 20px;
 }
 #IndiaNews >div{
     margin: 10px;
-    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     font-size: 15px;
     display: flex;
     /* align-items: center; */
     border-radius: 5px;
     padding: 10px;
+}#IndiaNews >div:hover{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
+
 .bracket{
     color:rgb(101,209,232);
 }
@@ -76,7 +80,7 @@ overflow: hidden;
     padding: 5px;
 }.left p{
     color: gray;
-    margin-top: -10px;
+    margin-bottom: 10px;
 }
 .right{
 width: 100% ;
@@ -101,8 +105,8 @@ color: aliceblue;
    /* padding-top: 200px; */
 }
 #TopNews p{
-    color: gray;
-    margin-top: -20px;
+    /* color: gray; */
+    /* margin-top: -20px; */
 }#TopNews h3{
     text-align: center;
 }
@@ -146,6 +150,10 @@ color: aliceblue;
     /* border-radius: 5px; */
     border-bottom:1px solid gray;
 }
+.buck:hover{
+color:rgb(101,209,232);
+box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
 
 /* .buck1{
     display: flex;
@@ -154,6 +162,11 @@ color: aliceblue;
 .buck1{
     margin: 10px;
     border-bottom:1px solid gray;
+    
+}.buck1:hover{
+    color:rgb(101,209,232);
+box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
 }
 .buck1 img{
 width: 100%;
@@ -181,4 +194,19 @@ overflow: hidden;
     align-items: center;
     color: aliceblue;
     /* border: 1px solid black; */
+}
+.tophead{
+    text-align: left;
+    color: black;
+    margin-top: 15px;
+
+}
+.tophead:hover{
+    color:rgb(101,209,232);
+    
+}
+.top1{
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid gray;
 }

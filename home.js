@@ -1,12 +1,14 @@
 let latestnewsdata;
 let topnewsdata;
-let a;
+let a = [];
 let latest = async () => {
   let res = await fetch(
-    "https://newsapi.org/v2/everything?q=latest&apiKey=8310b5752c8c4c30b984ed3c77811b9d"
+    "https://newsapi.org/v2/everything?q=latest&apiKey=309f6236b88c45899dc51d7af64c023a"
   );
   latestnewsdata = await res.json();
-  a = latestnewsdata.articles[0];
+  for (let i = 0; i < 9; i++) {
+    a.push(latestnewsdata.articles[i]);
+  }
   // console.log(a);
   localStorage.setItem("news", JSON.stringify(a));
   let articles = latestnewsdata.articles;
@@ -17,7 +19,7 @@ let latest = async () => {
 latest();
 let topnews = async () => {
   let res = await fetch(
-    "https://newsapi.org/v2/top-headlines?category=sports&language=en&apiKey=8310b5752c8c4c30b984ed3c77811b9d"
+    "https://newsapi.org/v2/top-headlines?category=sports&language=en&apiKey=2957328f0c6947efa41e73e2f9058927"
   );
   topnewsdata = await res.json();
   let articles = topnewsdata.articles;
@@ -28,11 +30,11 @@ let topnews = async () => {
 topnews();
 let appendlatest = (array, container) => {
   array.forEach((el, i) => {
-    if (i < 10) {
+    if (i < 30) {
       let title = document.createElement("p");
       title.innerText = el.title;
       let div = document.createElement("div");
-      div.setAttribute("id", "latest_div");
+      div.setAttribute("class", "latest_div");
 
       let imgdiv = document.createElement("div");
       imgdiv.setAttribute("id", "imgdiv");
@@ -54,28 +56,31 @@ let appendlatest = (array, container) => {
 };
 
 let append = (el, container) => {
-  let title = document.createElement("h2");
-  title.innerText = el.title;
+  el.forEach((el) => {
+    let title = document.createElement("h2");
+    title.innerText = el.title;
 
-  let publish = document.createElement("h4");
-  publish.innerText = `Published At${el.publishedAt}`;
+    let publish = document.createElement("h4");
+    publish.innerText = `Published At${el.publishedAt}`;
 
-  let img = document.createElement("img");
-  img.setAttribute("id", "middle_img");
-  img.src = el.urlToImage;
+    let img = document.createElement("img");
+    img.setAttribute("id", "middle_img");
+    img.src = el.urlToImage;
 
-  let desc = document.createElement("p");
-  desc.innerText = el.description;
+    let desc = document.createElement("p");
+    desc.innerText = el.description;
 
-  let div = document.createElement("div");
-  div.setAttribute("id", "middle_div");
+    let div = document.createElement("div");
+    div.setAttribute("id", "middle_div");
 
-  div.append(title, publish, img, desc);
-  container.append(div);
+    div.append(title, publish, img, desc);
+    container.append(div);
+  });
 };
 
 function middle() {
   let data = JSON.parse(localStorage.getItem("news"));
+  // console.log(data);
   let container = document.getElementById("middle");
   container.innerHTML = null;
   append(data, container);

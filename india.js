@@ -19,7 +19,7 @@ latest();
 
 let topnews = async () => {
   let res = await fetch(
-    "https://newsapi.org/v2/top-headlines?category=sports&language=en&apiKey=8310b5752c8c4c30b984ed3c77811b9d"
+    "https://newsapi.org/v2/top-headlines?category=sports&language=en&apiKey=d39443aca3534ef3a8ee7ad62a6a7660"
   );
   topnewsdata = await res.json();
   let articles = topnewsdata.articles;
@@ -31,7 +31,7 @@ topnews();
 
 let appendlatest = (array, container) => {
   array.forEach((el, i) => {
-    if (i < 10) {
+    if (i < 20) {
       let title = document.createElement("p");
       title.innerText = el.title;
       let div = document.createElement("div");

@@ -4,7 +4,7 @@ let a;
 
 let latest = async () => {
   let res = await fetch(
-    "https://newsapi.org/v2/top-headlines?q=world&language=en&apiKey=8310b5752c8c4c30b984ed3c77811b9d"
+    "https://newsapi.org/v2/top-headlines?q=world&language=en&apiKey=d39443aca3534ef3a8ee7ad62a6a7660"
   );
   latestnewsdata = await res.json();
   a = latestnewsdata.articles[0];
@@ -19,7 +19,7 @@ latest();
 
 let topnews = async () => {
   let res = await fetch(
-    "https://newsapi.org/v2/top-headlines?language=en&apiKey=8310b5752c8c4c30b984ed3c77811b9d"
+    "https://newsapi.org/v2/top-headlines?language=en&apiKey=d39443aca3534ef3a8ee7ad62a6a7660"
   );
   topnewsdata = await res.json();
   let articles = topnewsdata.articles;
