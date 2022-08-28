@@ -377,3 +377,19 @@ margin-top: 5px;
 .tag>span>a>p:hover{
   color:gray
 }
+#coloring{
+  display: flex;
+  text-align: center;
+  /* align-items: center; */
+  justify-content: center;
+  margin: 10px;
+  width: 90%;
+}
+.color{
+  color:rgb(101,209,232)
+}
+#coloring h3{
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* font-weight: 500; */
+  font-size: 20px;
+}

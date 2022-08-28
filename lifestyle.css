@@ -16,7 +16,7 @@
 
 #pageLinksBar{
     width: 100%;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
     height: 70px;
     margin-bottom: 20px;
     background-color:white;
