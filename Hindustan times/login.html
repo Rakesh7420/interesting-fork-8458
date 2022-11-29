@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel = "icon" href = "https://www.hindustantimes.com/res/images/logo.png" 
+        type = "image/x-icon">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: #eeeeee;
+      }
+
+      .head {
+        height: 60px;
+        text-align: center;
+        background-color: white;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+          rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      }
+
+      .head > img {
+        width: 23%;
+        margin-top: 10px;
+      }
+
+      .log {
+        width: 420px;
+        margin: auto;
+        margin-top: 40px;
+        height: auto;
+        padding: 20px 40px;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+          rgb(209, 213, 219) 0px 0px 0px 1px inset;
+      }
+
+      .log > p:first-child {
+        margin-bottom: 30px;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      form {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        height: auto;
+      }
+
+      input {
+        height: 35px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        border: none;
+        border-bottom: 1px solid #00b1cd;
+        color: black;
+      }
+
+      input[type="submit"] {
+        width: 50%;
+        margin: auto;
+        margin-top: 50px;
+        font-size: 17px;
+        height: 45px;
+        border-radius: 20px;
+        background-color: #4dc6d7;
+        color: white;
+        border: none;
+      }
+
+      input[type="submit"]:hover {
+        cursor: pointer;
+        background-color: #00b1cd;
+      }
+
+      #last {
+        margin-top: 80px;
+        text-align: center;
+      }
+
+      #last > p {
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="head">
+      <img
+        src="https://images.livemint.com/sso/newLogos/prod/ht_logo.svg?v2"
+        alt="error"
+      />
+    </div>
+
+    <div class="log">
+      <p>Sign In to get latest updates and rewards!</p>
+      <form action="">
+        <input type="text" placeholder="Upload your ID" id="photo" />
+        <input type="text" placeholder="Enter your name" id="name" />
+        <input type="email" placeholder="Enter email" id="email" required />
+        <input
+          type="password"
+          placeholder="Enter password"
+          id="pass"
+          required
+        />
+        <input type="submit" value="Continue" />
+      </form>
+
+      <div id="last">
+        <p>Powered by</p>
+        <img
+          src="https://images.livemint.com/img/static/ht-digital-logo.svg"
+          alt="error"
+        />
+        <p>One network. One account</p>
+        <img
+          src="https://images.livemint.com/dev/LHNewFooterLogoDesk.svg"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  document.querySelector("form").addEventListener("submit", mylogin);
+  let data = JSON.parse(localStorage.getItem("Login-Data"));
+
+  function mylogin() {
+    event.preventDefault();
+
+    let loginObj = {
+      img: document.querySelector("#photo").value,
+      name: document.querySelector("#name").value,
+      email: document.querySelector("#email").value,
+      password: document.querySelector("#pass").value,
+    };
+
+    // if(checkEmail(loginObj.email) == true) {
+    //  loginArr.push(loginObj)
+    // let loginArr = {
+    //     email,
+    //     password
+
+    // }
+    console.log(loginObj);
+    localStorage.setItem("Login-Data", JSON.stringify(loginObj));
+    alert("Sign In Successful");
+    window.location.href = "home.html";
+  }
+
+  // else {
+  //     alert('Account Already Exist');
+  // }
+
+  // function checkEmail(email) {
+  //     let x = loginArr.filter(function (elem) {
+  //         return email == elem.email;
+  //     })
+
+  //     if(x.length > 0) {
+  //         return false;
+  //     }
+
+  //     else {
+  //         return true;
+  //     }
+  // }
+
+  //}
+</script>

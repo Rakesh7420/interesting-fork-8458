@@ -1,0 +1,405 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* navbar code */
+
+.nav {
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #011e29;
+  color: white;
+}
+
+.nav>div {
+  width: fit-content;
+  height: auto;
+}
+
+span {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+}
+
+span>img {
+  width: 20px;
+}
+
+#left {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  align-items: center;
+  gap: 10px;
+}
+
+#icon+p+p {
+  border: 1px solid;
+}
+
+#middles>a>img {
+  width: 400px;
+  border-radius: 5px;
+}
+
+
+#box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 10px;
+}
+
+#box>div {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+}
+
+a {
+  color: white;
+}
+
+#box>div>img {
+  width: 20px;
+  margin-right: 2px;
+}
+
+#right>div {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 10px;
+}
+
+#right>div>a {
+  background-color: white;
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+
+}
+
+
+/* tags section */
+
+.tag {
+  /* border: 0.5px solid gray; */
+  /* border-bottom: 1px solid gray; */
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  height: 40px;
+}
+
+
+.tag>span {
+  width: 80%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tag>span>a {
+  color: #212121;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+
+/*  */
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidepanel {
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  /* height: 250px;  */
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidepanel {
+  /* width: 400px; */
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #011e29;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  margin-right: 5px;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#middle_sidebar {
+  display: flex;
+  /* justify-content: space-between; */
+  margin-top: 15px;
+}
+
+#img {
+  width: 75%;
+  height: 100%;
+  margin-left: 10px;
+  margin-top: -100px;
+  margin-bottom: 10px;
+  /* border: 1px solid white; */
+}
+
+#middle_sidebar>div {
+  /* border: 1px solid white; */
+  width: 3000px;
+  margin-left: -20px;
+  background-color: rgb(41, 41, 41);
+  text-align: left;
+}
+
+#middle_sidebar>div {
+  /* margin-left: 10px; */
+  /* padding: 15px; */
+  /* margin-right: 15px; */
+  /* width: 500px; */
+  /* padding: 15px; */
+  /* border: 1px solid white; */
+}
+
+#middle_sidebar>div>a {
+  text-align: left;
+  color: white;
+  font-weight: bolds;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+#bottom_sidebar {
+  color: white;
+}
+
+#bottom_sidebar>div:first-child {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 12px;
+}
+
+#bottom_sidebar>div:first-child {
+  padding: 0px 12px;
+  margin-top: 20px;
+}
+
+#bottom_sidebar>div:last-child>h3 {
+  /* border: 1px solid white; */
+  margin-top: 20px;
+  margin-bottom: 70px;
+  margin-left: 22px;
+  margin-right: 20px;
+}
+
+#div2 {
+  /* border: 1px solid white; */
+  /* padding-right: 30px; */
+  /* margin: 20px; */
+  padding: -20px;
+  width: 40%;
+}
+
+#div1 {
+  /* padding: 80px; */
+  width: 400px;
+  padding: -20px;
+  /* border: 1px solid blue; */
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidepanel2 {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  /* height: 250px;  */
+  top: 0;
+  right: 0;
+  /* background-color: #111; */
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  /* border: 1px solid black; */
+}
+
+.sidepanel2 a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  /* color: #818181; */
+  display: block;
+  transition: 0.3s;
+  /* border: 1px solid red; */
+}
+
+.sidepanel2 a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel2 .closebtn2 {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  font-size: 36px;
+  /* border: 1px solid white; */
+}
+
+.openbtn2 {
+  font-size: 20px;
+  cursor: pointer;
+  /* background-color: #111; */
+  /* color: white;s */
+  /* padding: 10px 15px; */
+
+  border: 1px solid red;
+}
+
+.openbtn2:hover {
+  background-color: #444;
+}
+
+#profile1 {
+  height: 300px;
+  margin-top: -80px;
+  background-color: #011E29;
+  border: 1px solidred;
+  padding-top: 60px;
+  text-align: center;
+  color: white;
+  font-size: 26px;
+}
+
+#profile2 {
+  height: 600px;
+  /* color: black; */
+  background-color: white;
+
+}
+
+#profile2>div {
+  padding: 10px;
+  margin-left: 8px;
+  /* margin: 10px 5px; */
+  height: 40px;
+  background-color: white;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+#profile2>div:last-child>h3>a{
+  color: black;
+  font-size: 18px;
+  margin-left: -28px;
+}
+
+/* #profile2>h3{
+margin-top: 5px;
+} */
+#user_img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color:   black;
+}
+
+#user_name {
+  margin-top: 15px;
+  font-size: large;
+}
+#mylogin{
+  font-size: 15px;
+  text-shadow: #f1f1f1;
+}
+
+#user_mail {
+  margin-top: 15PX;
+  font-size: large;
+}
+#logout{
+  background-color: #011E29;
+  color: white;
+  border: none;
+  font-weight: 700;
+  overflow: hidden;
+}
+#logout:hover{
+  background-color: whitesmoke;
+  color: #011E29;
+  border: none;
+  border-radius: 2px;
+  padding: 2px;
+  width: fit-content;
+  font-weight: 700;
+
+}
+.tag>span>a>p:hover{
+  color:gray
+}
+#coloring{
+  display: flex;
+  text-align: center;
+  /* align-items: center; */
+  justify-content: center;
+  margin: 10px;
+  width: 90%;
+}
+.color{
+  color:rgb(101,209,232)
+}
+#coloring h3{
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* font-weight: 500; */
+  font-size: 20px;
+}
+#home{
+  font-size: larger;
+  text-decoration: underline;
+  color:rgb(101,209,232);
+}
