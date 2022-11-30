@@ -1,89 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="navbar.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/navbar.css" />
+  </head>
+  <body>
     <div class="nav">
-        <div id="left">
-            <span id="icon">
-                <img src="https://cdn-icons-png.flaticon.com/128/3301/3301627.png" alt="icon">
-                <p><b>Explore</b></p>
-            </span>
+      <div id="left">
+        <span id="icon">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/3301/3301627.png"
+            alt="icon"
+          />
+          <p><b>Explore</b></p>
+        </span>
 
-            <span id="icon">
-                <img src="https://cdn-icons-png.flaticon.com/128/7289/7289312.png" alt="icon">
-                <p><b>Search</b></p>
-            </span>
+        <span id="icon">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/7289/7289312.png"
+            alt="icon"
+          />
+          <p><b>Search</b></p>
+        </span>
 
-            <p>Tuesday, Aug 23, 2022</p>
+        <p>Tuesday, Aug 23, 2022</p>
 
-            <span id="icon">
-                <p>New Delhi 30°C</p>
-                <img src="https://cdn-icons-png.flaticon.com/128/4064/4064269.png" alt="icon">
-            </span>
+        <span id="icon">
+          <p>New Delhi 30°C</p>
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/4064/4064269.png"
+            alt="icon"
+          />
+        </span>
+      </div>
+
+      <div id="middles">
+        <a href="">
+          <img
+            src="	https://www.hindustantimes.com/res/images/ht-logo.svg"
+            alt="error"
+        /></a>
+      </div>
+
+      <div id="right">
+        <span id="box">
+          <div>
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/7985/7985188.png"
+              alt="error"
+            />
+            <a href=""
+              ><p><b>Games</b></p></a
+            >
+          </div>
+
+          <div>
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/8271/8271136.png"
+              alt="error"
+            />
+            <a href=""
+              ><p><b>E-Paper</b></p></a
+            >
+          </div>
+
+          <div>
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/3711/3711310.png"
+              alt="error"
+            />
+            <a href=""
+              ><p><b>Sign-In</b></p></a
+            >
+          </div>
+        </span>
+
+        <div>
+          <p>Start 15 Days Free Trial</p>
+          <a href=""><p>Subscribe</p></a>
         </div>
-
-        <div id="middles">
-            <a href=""> <img src="	https://www.hindustantimes.com/res/images/ht-logo.svg" alt="error"></a>
-        </div>
-
-        <div id="right">
-
-            <span id="box">
-                <div>
-                <img src="https://cdn-icons-png.flaticon.com/128/7985/7985188.png" alt="error">
-                <a href=""><p><b>Games</b></p></a>
-                </div>
-                
-                <div>
-                <img src="https://cdn-icons-png.flaticon.com/128/8271/8271136.png" alt="error">
-                <a href=""><p><b>E-Paper</b></p></a>
-                </div>
-
-                <div>
-                <img src="https://cdn-icons-png.flaticon.com/128/3711/3711310.png" alt="error">
-                <a href=""><p><b>Sign-In</b></p></a>
-                </div>
-            </span>
-          
-            <div>
-                <p>Start 15 Days Free Trial</p>
-                <a href=""><p>Subscribe</p></a>
-            </div>
-        </div>
+      </div>
     </div>
 
     <div class="tag">
-        <span>
-            <a href=""><p>Home</p></a>
-            <a href=""><p>Latest</p></a>
-            <a href=""><p>India</p></a>
-            <a href=""><p>World</p></a>
-            <a href=""><p>Noida</p></a>
-            <a href=""><p>Entertainment</p></a>
-            <a href=""><p>Cricket</p></a>
-            <a href=""><p>Lifestyle</p></a>
-            <a href=""><p>Astrology</p></a>
-            <a href=""><p>Editorials</p></a>
-            <a href=""><p>For You</p></a>
-            <a href=""><p>Shop Now</p></a>
-        </span>
+      <span>
+        <a href=""><p>Home</p></a>
+        <a href=""><p>Latest</p></a>
+        <a href=""><p>India</p></a>
+        <a href=""><p>World</p></a>
+        <a href=""><p>Noida</p></a>
+        <a href=""><p>Entertainment</p></a>
+        <a href=""><p>Cricket</p></a>
+        <a href=""><p>Lifestyle</p></a>
+        <a href=""><p>Astrology</p></a>
+        <a href=""><p>Editorials</p></a>
+        <a href=""><p>For You</p></a>
+        <a href=""><p>Shop Now</p></a>
+      </span>
     </div>
-</body>
+  </body>
 </html>
 
-
 <script>
-    let data = JSON.parse(localStorage.getItem('Login-Data'));
+  let data = JSON.parse(localStorage.getItem("Login-Data"));
 
-    if(data.email !== "") {
-
-    document.querySelector('#mylogin').innerText = "My Account";
-    
-    }
+  if (data.email !== "") {
+    document.querySelector("#mylogin").innerText = "My Account";
+  }
 </script>
