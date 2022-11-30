@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>India news</title>
+    <title>Lifestyle News</title>
     <link
       rel="icon"
       href="https://www.hindustantimes.com/res/images/logo.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="css/india.css" />
-    <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="../css/lifestyle.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
   </head>
   <body>
     <div id="navbar">
@@ -142,12 +142,12 @@
       <div class="tag">
         <span>
           <a href="home.html"><p>Home</p></a>
-          <a href="india.html"><p id="home">India</p></a>
+          <a href="india.html"><p>India</p></a>
           <a href="world.html"><p>World</p></a>
           <a href="mumbaipage1.html"><p>Mumbai</p></a>
           <a href="entertaimentpage.html"><p>Entertainment</p></a>
           <a href="cricket.html"><p>Cricket</p></a>
-          <a href="lifestyle.html"><p>Lifestyle</p></a>
+          <a href="lifestyle.html"><p id="home">Lifestyle</p></a>
           <a href="editorial.html"><p>Editorials</p></a>
           <a href="foryou.html"><p>For You</p></a>
           <a href=""><p>Astrology</p></a>
@@ -183,25 +183,29 @@
         </div>
       </div>
     </div>
-    <!-- <div id="topbar">
-      <h2>India News</h2>
-      <h2>Top News</h2>
-    </div> -->
 
-    <div id="news">
-      <div id="india">
-        <div id="coloring">
-          <h3 class="color">[</h3>
-          <h3>INDIA NEWS</h3>
-          <h3 class="color">]</h3>
+    <div id="pageLinksBar"></div>
+    <div id="container">
+      <div id="leftSidebar">
+        <div id="topNews">
+          <h1 class="sideHeading">Top News</h1>
+        </div>
+
+        <div id="techNews">
+          <h1 class="sideHeading">Technology News</h1>
         </div>
       </div>
-      <div id="middle"></div>
-      <div id="topnews">
-        <div id="coloring">
-          <h3 class="color">[</h3>
-          <h3>TOP NEWS</h3>
-          <h3 class="color">]</h3>
+
+      <div id="lifestyleContent">
+        <h1>Lifestyle</h1>
+      </div>
+
+      <div id="rightSidebar">
+        <div id="healthNews">
+          <h1 class="sideHeading">Health News</h1>
+        </div>
+        <div id="bitcoin">
+          <h1 class="sideHeading">Bitcoin News</h1>
         </div>
       </div>
     </div>
@@ -449,7 +453,7 @@
     </div>
   </body>
 </html>
-<script src="js/india.js"></script>
+<script src="../js/lifestyle.js"></script>
 <script>
   let data = JSON.parse(localStorage.getItem("Login-Data"));
   // document.getElementById("logout").addEventListener("click", clearls);

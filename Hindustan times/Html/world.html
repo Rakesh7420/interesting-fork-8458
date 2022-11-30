@@ -4,17 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Entertaiment-Page-1</title>
+    <title>World News</title>
     <link
       rel="icon"
       href="https://www.hindustantimes.com/res/images/logo.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="css/mumbaipage1.css" . />
-    <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="../css/worldnews.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
   </head>
-  <link rel="stylesheet" href="entertaimentpage.css" />
   <body>
     <div id="navbar">
       <div id="mySidepanel" class="sidepanel">
@@ -144,9 +143,9 @@
         <span>
           <a href="home.html"><p>Home</p></a>
           <a href="india.html"><p>India</p></a>
-          <a href="world.html"><p>World</p></a>
+          <a href="world.html"><p id="home">World</p></a>
           <a href="mumbaipage1.html"><p>Mumbai</p></a>
-          <a href="entertaimentpage.html"><p id="home">Entertainment</p></a>
+          <a href="entertaimentpage.html"><p>Entertainment</p></a>
           <a href="cricket.html"><p>Cricket</p></a>
           <a href="lifestyle.html"><p>Lifestyle</p></a>
           <a href="editorial.html"><p>Editorials</p></a>
@@ -185,15 +184,27 @@
       </div>
     </div>
 
-    <div id="topbar">
-      <h1>Top News</h1>
-      <h1>Entertaiment News</h1>
-      <h1>Viral News</h1>
-    </div>
-    <div id="epaper">
-      <div id="topnews"></div>
-      <div id="entertainmentnews"></div>
-      <div id="viralnews"></div>
+    <!-- <div id="topbar">
+      <h2>World News</h2>
+      <h2>Top News</h2>
+    </div> -->
+
+    <div id="news">
+      <div id="india">
+        <div id="coloring">
+          <h3 class="color">[</h3>
+          <h3>WORLD NEWS</h3>
+          <h3 class="color">]</h3>
+        </div>
+      </div>
+      <div id="middle"></div>
+      <div id="topnews">
+        <div id="coloring">
+          <h3 class="color">[</h3>
+          <h3>TOP NEWS</h3>
+          <h3 class="color">]</h3>
+        </div>
+      </div>
     </div>
     <div id="footer">
       <div class="footer">
@@ -439,7 +450,7 @@
     </div>
   </body>
 </html>
-<script src="js/entertainmentpage.js"></script>
+<script src="../js/world.js"></script>
 <script>
   let data = JSON.parse(localStorage.getItem("Login-Data"));
   // document.getElementById("logout").addEventListener("click", clearls);

@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cricket News</title>
+    <title>ForYou-Page-1</title>
     <link
       rel="icon"
       href="https://www.hindustantimes.com/res/images/logo.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="css/cricket.css" />
-    <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="../css/foryou.css" . />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
   </head>
   <body>
     <div id="navbar">
@@ -57,7 +57,7 @@
         <div id="bottom_sidebar">
           <div>
             <h4>My Account</h4>
-            <h4><a href="saved.html">Saved Articles</a></h4>
+            <h4>Saved Articles</h4>
           </div>
           <div><h3 onclick="clearls()">Signout</h3></div>
         </div>
@@ -146,10 +146,10 @@
           <a href="world.html"><p>World</p></a>
           <a href="mumbaipage1.html"><p>Mumbai</p></a>
           <a href="entertaimentpage.html"><p>Entertainment</p></a>
-          <a href="cricket.html"><p id="home">Cricket</p></a>
+          <a href="cricket.html"><p>Cricket</p></a>
           <a href="lifestyle.html"><p>Lifestyle</p></a>
           <a href="editorial.html"><p>Editorials</p></a>
-          <a href="foryou.html"><p>For You</p></a>
+          <a href="foryou.html"><p id="home">For You</p></a>
           <a href=""><p>Astrology</p></a>
           <a href=""><p>Shop Now</p></a>
         </span>
@@ -184,30 +184,16 @@
       </div>
     </div>
 
-    <!-- <a href="saved.html">saved</a> -->
-    <div id="container">
-      <div id="TopNews">
-        <div class="head">
-          <h1 class="bracket">[</h1>
-          <h3>TOP NEWS</h3>
-          <h1 class="bracket">]</h1>
-        </div>
-      </div>
-      <div id="IndiaNews">
-        <div class="head">
-          <h1 class="bracket">[</h1>
-          <h1>CRICKET NEWS</h1>
-          <h1 class="bracket">]</h1>
-        </div>
-      </div>
-      <img src="" alt="" />
-      <div id="Photos">
-        <div class="head">
-          <h1 class="bracket">[</h1>
-          <h3>TOP SPORTS</h3>
-          <h1 class="bracket">]</h1>
-        </div>
-      </div>
+    <div id="topbar">
+      <h1>Top News</h1>
+      <h1>For You News</h1>
+      <h1>Viral News</h1>
+    </div>
+
+    <div id="epaper">
+      <div id="topnews"></div>
+      <div id="foryounews"></div>
+      <div id="viralnews"></div>
     </div>
     <div id="footer">
       <div class="footer">
@@ -453,23 +439,23 @@
     </div>
   </body>
 </html>
-<script src="js/cricket.js"></script>
+<script src="../js/foryou.js"></script>
 <script>
-  let datas = JSON.parse(localStorage.getItem("Login-Data"));
+  let data = JSON.parse(localStorage.getItem("Login-Data"));
   // document.getElementById("logout").addEventListener("click", clearls);
   let login = () => {
     let container = document.getElementById("mylogin");
-    if (!datas) {
+    if (!data) {
       window.location.href = "login.html";
     } else {
-      // console.log("data available");
+      console.log("data available");
       let image = document
         .getElementById("user_img")
-        .setAttribute("src", datas.img);
+        .setAttribute("src", data.img);
 
-      // console.log(data.img);
-      document.getElementById("user_name").innerText = datas.name;
-      document.getElementById("user_mail").innerText = datas.email;
+      console.log(data.img);
+      document.getElementById("user_name").innerText = data.name;
+      document.getElementById("user_mail").innerText = data.email;
       document.getElementById("mySidepanel2").style.width = "420px";
     }
   };
@@ -477,13 +463,13 @@
     document.getElementById("mySidepanel2").style.width = "0";
   }
 
-  if (datas.email !== "") {
+  if (data.email !== "") {
     document.querySelector("#mylogin").innerText = "MY ACCOUNT";
     document.getElementById("logout").innerText = "Log Out";
   }
   let clearls = () => {
     localStorage.clear();
-    // console.log("hello");
+    console.log("hello");
     window.location.reload();
     document.getElementById("logout").innerText = "";
     document.querySelector("#mylogin").innerText = "SignIn";
